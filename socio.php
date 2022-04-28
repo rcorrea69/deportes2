@@ -1,0 +1,72 @@
+<?php require 'include/validar_session.php';?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+
+   <?php include 'include/header.php'?>
+
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+    <?php include 'include/menu.php'?>
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="panel_socios.php">Principal</a>
+        </li>
+        <li class="breadcrumb-item active">Socio</li>
+      </ol>
+      <div class="row">
+        <div class="col-12">
+            <div class="form-row"> 
+              <div class="col-6">
+
+                <div class="input-group">
+                  <label for="dni" class="mt-2 mr-2"> DNI </label>
+                  <input class="form-control ml-2 " type="text" id='dni' name='dni'>
+                </div>
+              </div>
+              <div class="col-6">
+                <input class="btn btn-primary" type="button" name="btn_enviar" id="btn_enviar" value="buscar" >
+              </div> 
+              
+            </div>
+          
+        </div><!-- /.col-12-->
+      </div><!-- /.row-->
+      <div id="resultados_ajax">
+      </div>
+
+    </div> <!-- /.container-fluid-->
+    
+    
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Ruben Correa Website 2019</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+      <?php include 'modal/cerrar_sesion.php'?>
+    <!-- Bootstrap core JavaScript-->
+    <!-- Core plugin JavaScript-->
+    <!-- Custom scripts for all pages-->
+      <?php include 'include/librerias_js.php'?>
+  </div><!-- /.content-wrapper-->
+  <script type="text/javascript" src="js/socio.js"></script>         
+</body>
+
+</html>
